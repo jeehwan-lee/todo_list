@@ -18,8 +18,6 @@
 
 - [추후 업데이트](#추후-업데이트)
 
-- [후기](#후기)
-
 
 ## 들어가며
 
@@ -88,7 +86,9 @@
 <details>
 <summary>할 일 수정</summary>
 	
+	
 등록된 할 일을 더블클릭하면 수정을 할 수 있는 모달창이 뜨면서 해당 모달창에서 내용을 수정할 수 있습니다.
+	
 
 ![image](https://user-images.githubusercontent.com/26796099/233160669-264b9613-79f7-4c50-9154-690f514c133a.png)
 	
@@ -101,7 +101,9 @@
 <details>
 <summary>할 일 삭제</summary>
 	
+	
 휴지통 아이콘을 클릭하면 해당하는 할 일을 삭제할 수 있습니다.
+	
 
 ![image](https://user-images.githubusercontent.com/26796099/233162780-cd0ef65d-1af8-4cc1-9a75-100071a9dc75.png)
 
