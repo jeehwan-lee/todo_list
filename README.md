@@ -75,7 +75,7 @@
 <details>
 <summary>할 일 입력</summary>
 	
-다음과 같이 할 일을 입력하고 Plus To Do 버튼을 클릭하면 할 일이 등록됩니다.
+> 다음과 같이 할 일을 입력하고 Plus To Do 버튼을 클릭하면 할 일이 등록됩니다.
 
 ![image](https://user-images.githubusercontent.com/26796099/233160354-52ffc4f4-b999-4279-b75f-f216c19445a3.png)
 	
@@ -85,11 +85,9 @@
 
 <details>
 <summary>할 일 수정</summary>
+		
+> 등록된 할 일을 더블클릭하면 수정을 할 수 있는 모달창이 뜨면서 해당 모달창에서 내용을 수정할 수 있습니다.
 	
-	
-등록된 할 일을 더블클릭하면 수정을 할 수 있는 모달창이 뜨면서 해당 모달창에서 내용을 수정할 수 있습니다.
-	
-
 ![image](https://user-images.githubusercontent.com/26796099/233160669-264b9613-79f7-4c50-9154-690f514c133a.png)
 	
 ![image](https://user-images.githubusercontent.com/26796099/233161357-8e0398c3-7c74-4b46-947e-1c9da404b5c9.png)
@@ -100,11 +98,9 @@
 
 <details>
 <summary>할 일 삭제</summary>
+		
+> 휴지통 아이콘을 클릭하면 해당하는 할 일을 삭제할 수 있습니다.
 	
-	
-휴지통 아이콘을 클릭하면 해당하는 할 일을 삭제할 수 있습니다.
-	
-
 ![image](https://user-images.githubusercontent.com/26796099/233162780-cd0ef65d-1af8-4cc1-9a75-100071a9dc75.png)
 
 ![image](https://user-images.githubusercontent.com/26796099/233162892-3b203f2e-ad15-476a-a964-759ba6a1848e.png)
@@ -114,7 +110,7 @@
 <details>
 <summary>일괄삭제</summary>
 	
-Clear 버튼을 통해 현재 등록된 모든 할 일을 삭제할 수 있습니다.
+> Clear 버튼을 통해 현재 등록된 모든 할 일을 삭제할 수 있습니다.
 
 ![image](https://user-images.githubusercontent.com/26796099/233163296-a048b077-7041-4049-97a5-9dbf5ac786f8.png)
 	
@@ -125,11 +121,11 @@ Clear 버튼을 통해 현재 등록된 모든 할 일을 삭제할 수 있습�
 <details>
 <summary>유효성 검증</summary>
 	
-할 일을 등록할 경우 Title 혹은 Content가 비어있을 경우 경고 메세지를 출력합니다.
+> 할 일을 등록할 경우 Title 혹은 Content가 비어있을 경우 경고 메세지를 출력합니다.
 
 ![image](https://user-images.githubusercontent.com/26796099/233163479-876b9212-5679-4236-9ad0-b090cd2ba3e1.png)
 	
-모달창에서 수정을 할 경우, 경고 메세지를 한번 더 띄우기보다 모달창 내에서 비어있는 항목을 표시해줍니다.
+> 모달창에서 수정을 할 경우, 경고 메세지를 한번 더 띄우기보다 모달창 내에서 비어있는 항목을 표시해줍니다.
 	
 ![image](https://user-images.githubusercontent.com/26796099/233160918-89de0539-000a-4567-b12d-30b32e3632f6.png)
 
@@ -137,7 +133,7 @@ Clear 버튼을 통해 현재 등록된 모든 할 일을 삭제할 수 있습�
 
 ## 추후 업데이트
 
-### 1. 검색기능 추가
+### 검색기능 추가
 
 현재 등록된 할 일은 총 10개까지 등록이 가능해서 검색이 필요없지만
 
