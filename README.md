@@ -132,6 +132,7 @@
 ![image](https://user-images.githubusercontent.com/26796099/233160918-89de0539-000a-4567-b12d-30b32e3632f6.png)
 	
 > 등록된 할 일이 10개일 경우, 더 이상 추가할 수 없다는 경고 메세지를 출력합니다.
+	
 ![image](https://user-images.githubusercontent.com/26796099/233166234-ee064546-1726-46b3-a142-f4b8fa0705be.png)
 
 
