@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="main">
+      <div id="main_title">My To Do List</div>
+      <div id="main_desc">add your to-do List!</div>
+      <div class="input_field">
+        <div class="title_field">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Leave a title here"
+          />
+        </div>
+        <div class="content_field">
+          <label for="content">Content</label>
+          <textarea
+            id="content"
+            name="content"
+            placeholder="Leave a content here"
+          ></textarea>
+        </div>
+      </div>
+      <div class="btn_body">
+        <button class="btn" id="plus">Plus To Do</button>
+        <button class="btn" id="del">Clear</button>
+      </div>
+      <div>
+        <table class="table_body">
+          <thead>
+            <tr>
+              <th width="10%">No</th>
+              <th width="15%">Title</th>
+              <th width="40%">Content</th>
+              <th width="20%">Date of register</th>
+              <th width="15%">Delete</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="modal">
+        <div class="message_modal">
+          <div class="message"></div>
+        </div>
+
+        <div class="edit_modal">
+          <div class="edit_input_field">
+            <div class="edit_title_field">
+              <label for="edit_title">Title</label>
+              <input
+                type="text"
+                id="edit_title"
+                name="edit_title"
+                placeholder="Leave a title here"
+              />
+            </div>
+            <div class="edit_content_field">
+              <label for="edit_content">Content</label>
+              <textarea
+                id="edit_content"
+                name="edit_content"
+                placeholder="Leave a content here"
+              ></textarea>
+            </div>
+            <div class="modal_btn">
+              <button id="editBtn">Edit</button>
+              <button id="cancelBtn">Cancel</button>
+            </div>
+            <div id="alert_message"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
