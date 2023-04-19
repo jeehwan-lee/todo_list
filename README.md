@@ -86,27 +86,37 @@
 
 ![image](https://user-images.githubusercontent.com/26796099/233160669-264b9613-79f7-4c50-9154-690f514c133a.png)
 	
-![image](https://user-images.githubusercontent.com/26796099/233160807-7f6e8691-2f5c-4921-88fe-18359efb4ec1.png)
-	
 ![image](https://user-images.githubusercontent.com/26796099/233161357-8e0398c3-7c74-4b46-947e-1c9da404b5c9.png)
 
 ![image](https://user-images.githubusercontent.com/26796099/233161407-fe400aae-158b-4423-847f-4da4fe9ea2cd.png)
-
-![image](https://user-images.githubusercontent.com/26796099/233160918-89de0539-000a-4567-b12d-30b32e3632f6.png)
 
 </details>
 
 <details>
 <summary>할 일 삭제</summary>
 
-![image](https://user-images.githubusercontent.com/26796099/233161561-9afcd884-b4d4-448b-ae15-aa75b4416ef8.png)
+![image](https://user-images.githubusercontent.com/26796099/233162780-cd0ef65d-1af8-4cc1-9a75-100071a9dc75.png)
+
+![image](https://user-images.githubusercontent.com/26796099/233162892-3b203f2e-ad15-476a-a964-759ba6a1848e.png)
+
 
 </details>
 
 <details>
-<summary>게시글 상세 페이지</summary>
+<summary>일괄삭제</summary>
 
-![image](https://user-images.githubusercontent.com/26796099/218556368-8f320485-5c26-4822-a900-99da21493ba3.png)
+![image](https://user-images.githubusercontent.com/26796099/233163296-a048b077-7041-4049-97a5-9dbf5ac786f8.png)
+	
+![image](https://user-images.githubusercontent.com/26796099/233163332-ec319e73-bcbe-423e-be99-ed7e889c1674.png)
+
+</details>
+
+<details>
+<summary>유효성 검증</summary>
+
+![image](https://user-images.githubusercontent.com/26796099/233163479-876b9212-5679-4236-9ad0-b090cd2ba3e1.png)
+	
+![image](https://user-images.githubusercontent.com/26796099/233160918-89de0539-000a-4567-b12d-30b32e3632f6.png)
 
 </details>
 
