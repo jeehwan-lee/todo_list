@@ -2,6 +2,9 @@
 
 > 프론트 개발의 기본이 되는 HTML, CSS, 자바스크립트를 활용한 투두리스트 프로젝트입니다.
 
+![image](https://user-images.githubusercontent.com/26796099/233159256-2ebd118a-66c4-4f0b-b4f4-da4f97a9245f.png)
+
+
 ## 목차
 
 - [들어가며](#들어가며)
@@ -17,19 +20,34 @@
 
 - [후기](#후기)
 
+
 ## 들어가며
 
 ### 1. 프로젝트 소개
 
 이 프로젝트는 프론트 개발의 기본이 되는 HTML, CSS, 자바스크립트를 활용한 투두리스트 프로젝트로
 
-자바스크립트를 활용한 DOM 조작법을 익히기 위해 시작했습니다.
+자바스크립트를 활용한 기본적인 CRUD 구현과 DOM 조작법을 익히기 위해 시작했습니다.
 
 ### 2. 프로젝트 기능
 
 프로젝트의 기능은 다음과 같습니다.
 
-##### 1. Title과 Content 입력을 통한 할 일과 세부사항 저장
+- Title과 Content 입력을 통한 할 일과 세부사항 저장 (CREATE)
+
+- Title 또는 Content 를 입력하지 않고 Plus To DO를 클릭하면 저장할 수 없습니다. (Validation Check)
+
+- 할 일을 등록하면 제목(Title), 세부사항(Content), 등록날짜(Date of register) 3가지 항목이 등록되고 표시됨 (READ) 
+
+- 등록된 할 일을 더블클릭 할 경우, 해당 할 일을 수정할 수 있는 Modal 창이 뜨면서 수정 가능 (UPDATE)
+
+- 수정을 할 경우에도 Title 또는 Content 를 입력하지 않으면 수정할 수 없습니다. (Validation Check)
+
+- 할 일은 총 10개까지 저장할 수 있으며, 각각의 할 일은 휴지통 아이콘을 클릭해서 삭제 가능 (DELETE)
+
+- 등록된 할 일은 휴지통 아이콘을 클릭하는 방법 외에 드래그를 통해 삭제할 수 있습니다. (DELETE)
+
+- Clear 버튼을 통해 등록된 할 일을 모두 삭제할 수 있습니다. (DELETE)
 
 ### 3. 사용기술
 
@@ -50,28 +68,38 @@
 <details>
 <summary>메인 페이지</summary>
 
-![image](https://user-images.githubusercontent.com/26796099/218563257-1d6ff896-91f9-4115-94e4-16117a0ae82a.png)
+![image](https://user-images.githubusercontent.com/26796099/233160208-c19ca46b-7d03-42b5-bf8f-54442f05173b.png)
 
 </details>
 
 <details>
-<summary>로그인 페이지</summary>
+<summary>할 일 입력</summary>
 
-![image](https://user-images.githubusercontent.com/26796099/219971792-c9815cf5-5a97-41d4-81be-3179bbd32f3d.png)
-
-</details>
-
-<details>
-<summary>회원가입 페이지</summary>
-
-![image](https://user-images.githubusercontent.com/26796099/219971836-0fa58e71-8065-40e2-ac5b-7b3882345ee4.png)
+![image](https://user-images.githubusercontent.com/26796099/233160354-52ffc4f4-b999-4279-b75f-f216c19445a3.png)
+	
+![image](https://user-images.githubusercontent.com/26796099/233160406-cbfacb2c-65f8-41a8-8200-5d2b603c1f38.png)
 
 </details>
 
 <details>
-<summary>게시글 등록 페이지</summary>
+<summary>할 일 수정</summary>
 
-![image](https://user-images.githubusercontent.com/26796099/218556143-dd77a280-36f4-452d-a388-8d8a2fbaf7da.png)
+![image](https://user-images.githubusercontent.com/26796099/233160669-264b9613-79f7-4c50-9154-690f514c133a.png)
+	
+![image](https://user-images.githubusercontent.com/26796099/233160807-7f6e8691-2f5c-4921-88fe-18359efb4ec1.png)
+	
+![image](https://user-images.githubusercontent.com/26796099/233161357-8e0398c3-7c74-4b46-947e-1c9da404b5c9.png)
+
+![image](https://user-images.githubusercontent.com/26796099/233161407-fe400aae-158b-4423-847f-4da4fe9ea2cd.png)
+
+![image](https://user-images.githubusercontent.com/26796099/233160918-89de0539-000a-4567-b12d-30b32e3632f6.png)
+
+</details>
+
+<details>
+<summary>할 일 삭제</summary>
+
+![image](https://user-images.githubusercontent.com/26796099/233161561-9afcd884-b4d4-448b-ae15-aa75b4416ef8.png)
 
 </details>
 
@@ -84,89 +112,15 @@
 
 ## 추후 업데이트
 
-### 1. Service 수정 필요
+### 1. 검색기능 추가
 
-UserService, QuestionService 및 AnswerService 의 getUser와 getQuestion, getAnswer 메서드를 통해
+현재 등록된 할 일은 총 10개까지 등록이 가능해서 검색이 필요없지만
 
-user와 question, answer 을 가져올때 Optional 을 통해서 값을 찾지 못했을 경우 예외처리 필요
+나중에 등록될 할 일의 갯수가 많아진다면 원하는것을 바로 보기 위해선 검색기능이 필요합니다.
 
-<details>
-<summary>코드예시</summary>
+때문에 추후 업데이트 사항으로 검색기능을 추가하겠습니다.
 
-```
-package com.crud.service;
-...
-@Service
-public class UserService {
-
-	...
-
-	public User getUser(String username) {
-		Optional<User> user = userRepository.findByusername(username);
-		// user를 못찾을 경우 예외처리 필요
-		return user.get();
-	}
-}
-```
-
-</details>
-
-### 2. 메인 페이지의 게시글 제목 옆 답변 개수 표시 기능
-
-대부분 게시판의 게시글 제목의 옆에는 해당 게시물에 달린 답변의 개수가 표시되어 있으며
-
-위 프로젝트에서도 답변의 개수를 표시하는 기능이 필요
-
-### 3. 게시글 검색 기능 구현
-
-메인 페이지에서 게시글 리스트를 보여주는것 외에 게시글을 검색할 수 있는 기능 필요
-
-### 4. 회원정보 수정 및 탈퇴 기능
-
-로그인이 되어있을 경우 각 회원들이 접속할 수 있는 회원정보를 수정 및 탈퇴 페이지를 만들고
-
-해당 페이지에서 회원정보 수정 및 탈퇴 기능 구현이 필요
 
 ## 후기
 
-앞의 소개에서도 이야기한것처럼 이 프로젝트는 SpringBoot를 공부하면서 웹 페이지와 서버의 기본적인 기능인
 
-CRUD와 로그인, 회원가입 기능을 구현해보기 위해 시작한 프로젝트입니다.
-
-이전에 React.js와 node.js를 사용해 MERN STACT으로 개발해서 간단한 블로그를 만든적이 있는데
-
-이번에는 Spring으로 객체지향 프로그래밍 방식의 프로젝트의 전반적인 구성과 사용법을 알아보고
-
-Spring에서 제공하는 다양한 라이브러리를 사용해보는것이 목표였습니다.
-
-Spring Data JPA와 Spring Security는 MERN STACK과는 다르게 라이브러리에서 제공하는 기능이 다양하기 때문에
-
-여러 서적과 인터넷 검색을 통해 기능들을 찾아보았으며,
-
-이번 프로젝트가 끝난후에 따로 다시 공부를 해야할 필요성을 느꼈습니다.
-
-특히 Spring Data JPA는 각각의 객체를 테이블로 매핑시킨다는점이 인상적이었으며,
-
-개발자 입장에서는 JPA라는 기술을 한번 더 배워야한다는 번거로움은 있지만
-
-기존에 프로그램 안에서 개발자가 수행하던 데이터베이스 설정이나 SQL 구문을 보내는 기능 등을
-
-JPA가 대신 해주기 때문에 초기에 프로젝트의 설계만 잘한다면 오히려 편하다는 생각이 들었습니다.
-
-또한 Spring Security의 경우 Security가 보안 설정을 해주기 때문에 편리하지만
-
-Thymeleaf와 연동해서 많은 기능을 갖고 있는 만큼 알아야할것이 많다는것을 느꼈으며
-
-Thymeleaf를 먼저 공부한뒤에 Spring Security를 공부하면 좋겠다는 생각이 들었습니다.
-
-때문에 앞으로의 공부방향은
-
-1. JPA와 Spring Data JPA
-
-2. Thymeleaf 기본 기능
-
-3. Spring Security
-
-위와 같은 순서로 공부를 하고 다시 한번 SpringBoot를 활용한 게시판 프로젝트를 만들어보려고 합니다.
-
-감사합니다.
