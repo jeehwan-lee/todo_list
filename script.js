@@ -20,6 +20,14 @@ function clearInput() {
   contentInput.value = "";
 }
 
+function getLocalStorage() {
+  todos = JSON.parse(localStorage.getItem("todos"));
+}
+
+function saveLocalStorage() {
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
+
 // table을 그려주는 메서드
 function tableRowRender() {
   for (var i = 1; i < 11; i++) {
@@ -69,6 +77,7 @@ function editTodo() {
         modal.style.display = "none";
         modal.querySelector(".edit_modal").style.display = "none";
 
+        saveLocalStorage();
         tableBodyRender();
       }
     }
@@ -125,6 +134,7 @@ function deleteTodo(event) {
   var todosNew = todos.filter((todo) => todo.title !== deleteTitle);
   todos = todosNew;
 
+  saveLocalStorage();
   // 다시 만들어진 todos를 통해 tableBody를 그려줌
   tableBodyRender();
 }
@@ -137,6 +147,7 @@ function dragDelete(event) {
   var todosNew = todos.filter((todo) => todo.title !== deleteTitle);
   todos = todosNew;
 
+  saveLocalStorage();
   // 다시 만들어진 todos를 통해 tableBody를 그려줌
   tableBodyRender();
 }
@@ -171,6 +182,7 @@ function onClick(event) {
         };
 
         todos.push(todo);
+        saveLocalStorage();
         clearInput();
         tableBodyRender();
       }
@@ -179,6 +191,7 @@ function onClick(event) {
     case "del":
       // todos 배열을 삭제
       todos.splice(0, todos.length);
+      saveLocalStorage();
       tableBodyRender();
       break;
   }
@@ -212,7 +225,10 @@ function editChange(event) {
 
 // 페이지에 접속할때 시작하는 메서드
 function init() {
+  getLocalStorage();
   tableBodyRender();
+
+  // console.log(JSON.parse(localStorage.getItem("todos")));
 
   // 각 버튼에 이벤트 리스너 연결
   for (var i = 0; i < btn.length; i++) {
