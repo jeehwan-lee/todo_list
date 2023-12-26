@@ -21,6 +21,7 @@ function clearInput() {
 }
 
 function getLocalStorage() {
+  if (JSON.parse(localStorage.getItem("todos")) == null) return;
   todos = JSON.parse(localStorage.getItem("todos"));
 }
 
